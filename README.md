@@ -72,6 +72,6 @@ queries/
 
 ## 🎓 Academic Context
 This project was developed as part of **IT222 – Database Principles**
-at **King Saud University**, College of Computer and Information Sciences.
+at **King Saud University**, College of Computer and Information Sciences, 1st Semester 1447 H.
 
 **Supervisor:** Noura Bander Al-Saud
