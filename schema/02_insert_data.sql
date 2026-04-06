@@ -1,5 +1,5 @@
 -- ============================================
--- Hilton Honors Database - Sample Data
+-- Hilton Honors Database - (Sample Data)
 -- IT222 Database Principles Project
 -- ============================================
 
