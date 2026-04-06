@@ -1,0 +1,51 @@
+-- ============================================
+-- Hilton Honors Database - Sample Data
+-- IT222 Database Principles Project
+-- ============================================
+
+-- Insert Employees
+INSERT INTO "EMPLOYEE" ("NAME", "JOBTITLE") VALUES ('Ali Ahmed', 'Receptionist');
+INSERT INTO "EMPLOYEE" ("NAME", "JOBTITLE") VALUES ('Sara Khalid', 'Manager');
+INSERT INTO "EMPLOYEE" ("NAME", "JOBTITLE") VALUES ('Omar Hassan', 'Receptionist');
+INSERT INTO "EMPLOYEE" ("NAME", "JOBTITLE") VALUES ('Fatima Nasser', 'Supervisor');
+INSERT INTO "EMPLOYEE" ("NAME", "JOBTITLE") VALUES ('Khalid Saeed', 'Receptionist');
+
+-- Insert Rooms
+INSERT INTO "ROOM" ("TYPE", "PRICE", "STATUS") VALUES ('Single', 500, 'available');
+INSERT INTO "ROOM" ("TYPE", "PRICE", "STATUS") VALUES ('Double', 800, 'available');
+INSERT INTO "ROOM" ("TYPE", "PRICE", "STATUS") VALUES ('Suite', 1500, 'available');
+INSERT INTO "ROOM" ("TYPE", "PRICE", "STATUS") VALUES ('Single', 450, 'occupied');
+INSERT INTO "ROOM" ("TYPE", "PRICE", "STATUS") VALUES ('Double', 900, 'available');
+INSERT INTO "ROOM" ("TYPE", "PRICE", "STATUS") VALUES ('Suite', 2000, 'maintenance');
+INSERT INTO "ROOM" ("TYPE", "PRICE", "STATUS") VALUES ('Deluxe', 1200, 'available');
+INSERT INTO "ROOM" ("TYPE", "PRICE", "STATUS") VALUES ('Single', 550, 'available');
+INSERT INTO "ROOM" ("TYPE", "PRICE", "STATUS") VALUES ('Double', 750, 'occupied');
+INSERT INTO "ROOM" ("TYPE", "PRICE", "STATUS") VALUES ('Deluxe', 1100, 'available');
+
+-- Insert Customers
+INSERT INTO "CUSTOMER" ("NAME", "PHONE", "EMAIL") VALUES ('Rand Saleh', '0551234567', 'rand@email.com');
+INSERT INTO "CUSTOMER" ("NAME", "PHONE", "EMAIL") VALUES ('Jouri Fahad', '0559876543', 'jouri@email.com');
+INSERT INTO "CUSTOMER" ("NAME", "PHONE", "EMAIL") VALUES ('Raneem Mohammed', '0553456789', 'raneem@email.com');
+INSERT INTO "CUSTOMER" ("NAME", "PHONE", "EMAIL") VALUES ('Nouf Sultan', '0557654321', 'nouf@email.com');
+INSERT INTO "CUSTOMER" ("NAME", "PHONE", "EMAIL") VALUES ('Ahmed Ali', '0552345678', 'ahmed@email.com');
+
+-- Insert Reservations
+INSERT INTO "RESERVATION" ("CHECK_INDATE", "CHECK_OUT_DATE", "TOTALPRICE", "CUSTOMER_ID", "ROOM_NUMBER", "EMPLOYEE_ID")
+VALUES (DATE '2025-01-10', DATE '2025-01-15', 2500, 1, 1, 1);
+
+INSERT INTO "RESERVATION" ("CHECK_INDATE", "CHECK_OUT_DATE", "TOTALPRICE", "CUSTOMER_ID", "ROOM_NUMBER", "EMPLOYEE_ID")
+VALUES (DATE '2025-02-01', DATE '2025-02-05', 3200, 2, 2, 2);
+
+INSERT INTO "RESERVATION" ("CHECK_INDATE", "CHECK_OUT_DATE", "TOTALPRICE", "CUSTOMER_ID", "ROOM_NUMBER", "EMPLOYEE_ID")
+VALUES (DATE '2025-03-10', DATE '2025-03-14', 6000, 3, 3, 1);
+
+INSERT INTO "RESERVATION" ("CHECK_INDATE", "CHECK_OUT_DATE", "TOTALPRICE", "CUSTOMER_ID", "ROOM_NUMBER", "EMPLOYEE_ID")
+VALUES (DATE '2025-04-01', DATE '2025-04-03', 900, 4, 4, 3);
+
+INSERT INTO "RESERVATION" ("CHECK_INDATE", "CHECK_OUT_DATE", "TOTALPRICE", "CUSTOMER_ID", "ROOM_NUMBER", "EMPLOYEE_ID")
+VALUES (DATE '2025-05-15', DATE '2025-05-20', 4500, 1, 5, 2);
+
+INSERT INTO "RESERVATION" ("CHECK_INDATE", "CHECK_OUT_DATE", "TOTALPRICE", "CUSTOMER_ID", "ROOM_NUMBER", "EMPLOYEE_ID")
+VALUES (DATE '2025-06-01', DATE '2025-06-07', 700, 2, 7, 4);
+
+COMMIT;
